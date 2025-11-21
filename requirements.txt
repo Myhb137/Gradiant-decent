@@ -1,0 +1,11 @@
+# requirements.txt
+# Libraries required for running the Gradient Descent Visualization script.
+
+# Core scientific computing library (used for arrays, math operations)
+numpy
+
+# Symbolic mathematics library (used for automatic calculation of gradients/derivatives)
+sympy
+
+# GPU-accelerated, interactive plotting library (used for the 3D and 2D plots)
+plotly
