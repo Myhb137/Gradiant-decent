@@ -1,0 +1,60 @@
+{
+  "functions": [
+    {
+      "name": "Simple Convex",
+      "function": "x**2 + y**2",
+      "description": "Classic bowl-shaped function. Global minimum at (0,0).",
+      "start": {"x": 3, "y": 4},
+      "learning_rate": 0.1,
+      "iterations": 50
+    },
+    {
+      "name": "Ridge/Elliptic",
+      "function": "5*x**2 + 2*y**2",
+      "description": "Different curvature along x and y, tests gradient scaling.",
+      "start": {"x": 4, "y": 3},
+      "learning_rate": 0.05,
+      "iterations": 60
+    },
+    {
+      "name": "Saddle Point",
+      "function": "x**2 - y**2",
+      "description": "Saddle point at (0,0); gradient descent may diverge along y.",
+      "start": {"x": 1, "y": 1},
+      "learning_rate": 0.1,
+      "iterations": 50
+    },
+    {
+      "name": "Rosenbrock-like",
+      "function": "(1-x)**2 + 100*(y-x**2)**2",
+      "description": "Narrow, curved valley. Classic hard case for gradient descent.",
+      "start": {"x": -1.5, "y": 2},
+      "learning_rate": 0.001,
+      "iterations": 5000
+    },
+    {
+      "name": "Trigonometric Mix",
+      "function": "sin(x)*cos(y) + x**2 + y**2",
+      "description": "Combines oscillation + bowl. Multiple local minima.",
+      "start": {"x": 2, "y": 2},
+      "learning_rate": 0.05,
+      "iterations": 200
+    },
+    {
+      "name": "Exponential/Polynomial",
+      "function": "x**2 + y**2 + 4*exp(-(x**2+y**2))",
+      "description": "Has a small bump at the center before the main minimum.",
+      "start": {"x": 3, "y": 3},
+      "learning_rate": 0.1,
+      "iterations": 100
+    },
+    {
+      "name": "Multi-Minima",
+      "function": "x**4 - 16*x**2 + y**4 - 16*y**2",
+      "description": "Four local minima; tests convergence depending on start point.",
+      "start": {"x": 0, "y": 0},
+      "learning_rate": 0.01,
+      "iterations": 200
+    }
+  ]
+}
